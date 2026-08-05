@@ -20,3 +20,9 @@ examples of primitive data types in JavaScript are:
 5. Undefined // used to represent a variable that has been declared but not assigned a value eg let x; console.log(x); // undefined
 6. Symbol (ES6) // used to create unique identifiers eg const sym1 = Symbol('foo'); const sym2 = Symbol('foo'); console.log(sym1 === sym2); // false
 7. BigInt (ES11)  // used to represent integers larger than 2^53 - 1 eg 9007199254740991n  
+
+
+// examples of non-primitive data types in JavaScript are:
+1. Array    // used to represent a collection of values eg const arr = [1, 2, 3];
+2. Object   // used to represent a collection of key-value pairs eg const obj = { name: "John", age: 30 };
+3. Function // used to represent a block of code that can be executed when called eg function greet() { console.log("Hello!"); }//
