@@ -25,4 +25,4 @@ examples of primitive data types in JavaScript are:
 // examples of non-primitive data types in JavaScript are:
 1. Array    // used to represent a collection of values eg const arr = [1, 2, 3];
 2. Object   // used to represent a collection of key-value pairs eg const obj = { name: "John", age: 30 };
-3. Function // used to represent a block of code that can be executed when called eg function greet() { console.log("Hello!"); }
+3. Function // used to represent a block of code that can be executed when called eg function greet() { console.log("Hello!"); }//

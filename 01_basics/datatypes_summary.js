@@ -82,6 +82,6 @@ console.log(typeof anotherId);
     console.log(userTwo.email); // usertwo@example.com  
 
     //here, userOne and userTwo are both references to the same object in heap memory. 
-    //Therefore, when we change the email property of userTwo, it also changes the email property of userOne.
+    //Therefore, when we change the email property of userTwo, it also changes the email property of userOne
 
-    
+
