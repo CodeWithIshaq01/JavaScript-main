@@ -30,13 +30,20 @@ console.log(anotherString); // empty string because slice() method returns an em
 // If the starting index is greater than the ending index, the method returns an empty string.
 
 // const newStringOne = "   hitesh    "
-// console.log(newStringOne);
-// console.log(newStringOne.trim());
+// console.log(newStringOne); // ---hitesh (with space)
+// console.log(newStringOne.trim()); hitesh (space clear)
 
 // const url = "https://hitesh.com/hitesh%20choudhary"
 
-// console.log(url.replace('%20', '-'))
+// console.log(url.replace('%20', '-'))"https://hitesh.com/hitesh-20choudhary
 
-// console.log(url.includes('sundar'))
+// console.log(url.includes('sundar')) // false (includes() method checks if a string contains a specified value and returns true or false)
+// console.log(url.includes('hitesh')) // true (includes() method checks if a string
+//                                         contains a specified value and returns true or false)
 
-// console.log(gameName.split('-'));
+// console.log(gameName.split('-')); // [ 'hitesh', 'hc', 'com' ] (split() method splits a 
+//                                   string into an array of substrings, and returns the new array. 
+//                                   The first parameter is the separator, which can be a string or 
+//                                    a regular expression. The second parameter is optional and specifies 
+//                                    the limit on the number of splits to be found. If omitted, all occurrences 
+//                                      of the separator will be used to split the string.)
