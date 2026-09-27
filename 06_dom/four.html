@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement(`li`);
+        li.innerHTML = `${langName}`
+        document.querySelector(`.language`).appendChild(li)
+
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+       //more optimised code below given
+       function addoptlanguage(langName){
+        const li = document.createElement(`li`)
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(`.language`).appendChild(li)
+
+       }
+addoptlanguage(`golang`)
+
+// Edits
+
+const secondlang = document.querySelector("li:nth-child(2)")
+console.log(secondlang)    // python
+// secondlang.innerHTML= "mojo" // simple but not optimised (tree triverse etc)
+const newli = document.createElement(`li`)
+newli.textContent = "mojo"
+secondlang.replaceWith(newli)
+
+// edits
+const firstlang = document.querySelector("li:first-child")
+firstlang.outerHTML = `<li>typescript</li>`
+
+// remove
+const lastlang = document.querySelector('li:last-child') // golang removed
+if (lastlang) lastlang.remove()
+</script>
+</html>
